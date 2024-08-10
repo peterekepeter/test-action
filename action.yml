@@ -1,13 +1,12 @@
-name: 'Hello World'
+name: 'Browser test'
 description: 'Greet someone and record the time'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  url:  # id of input
+    description: 'Url to test'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+# outputs:
+#   time: # id of output
+#     description: 'The time we greeted you'
 runs:
   using: 'node20'
   main: 'runner.js'
