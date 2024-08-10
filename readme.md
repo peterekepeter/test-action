@@ -11,7 +11,7 @@ Tests a website at given url for errors.
 ## Example usage
 
 ```yaml
-      - uses: peterekepeter/test-action@create-ci-test
-        with:
-          url: 'https://github.com
+- uses: peterekepeter/test-with-browser@main
+  with:
+    url: 'https://github.com
 ```
