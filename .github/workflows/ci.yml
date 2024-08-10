@@ -35,6 +35,6 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-      - uses: peterekepeter/test-action@main
+      - uses: peterekepeter/test-action@create-ci-test
         with:
           who-to-greet: 'Mona the Octocat'
