@@ -1,9 +1,9 @@
 const { spawn, spawnSync } = require("child_process");
 
-$("npm", "install");
-$("node", "main.js");
+sh("npm", "install");
+sh("node", "main.js");
 
-function $(cmd, ...args){
+function sh(cmd, ...args){
     const result = spawnSync(cmd, args, { stdio: 'inherit' });
     if (result.error) {
         console.error(result.error);
