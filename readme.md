@@ -13,7 +13,8 @@ Tests a website at given url for errors.
 ## Example usage
 
 ```yaml
-- uses: peterekepeter/test-with-browser@main
+- name: Test with Browser
+  uses: peterekepeter/test-with-browser@v1.0.0
   with:
     url: 'https://github.com/status'
 ```
