@@ -1,3 +1,5 @@
+
+
 name: CI
 
 on:
@@ -14,7 +16,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-          
-      - uses: peterekepeter/test-action@main
+      - uses: peterekepeter/test-with-browser@main
         with:
           url: 'https://github.com'
