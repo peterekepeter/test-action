@@ -1,8 +1,11 @@
-name: 'Browser test'
-description: 'Greet someone and record the time'
+name: 'Test with Browser'
+description: 'Launchers a web browser, navigates to URL and reports errors.'
+branding:
+  icon: 'globe'
+  color: 'blue'
 inputs:
   url:  # id of input
-    description: 'Url to test'
+    description: 'URL to test'
     required: true
 # outputs:
 #   time: # id of output
