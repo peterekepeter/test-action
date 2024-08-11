@@ -1,7 +1,8 @@
 const { spawn, spawnSync } = require("child_process");
+const path = require("path");
 
-sh("npm", "install");
-sh("node", "main.js");
+sh("npm", "--prefix", __dirname, "install");
+sh("node", path.join(__dirname, "main.js"));
 
 function sh(cmd, ...args){
     const result = spawnSync(cmd, args, { stdio: 'inherit' });
