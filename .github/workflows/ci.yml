@@ -11,11 +11,18 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  check-remote-site:
     runs-on: ubuntu-latest
-
+    steps:
+      - uses: peterekepeter/test-with-browser@main
+        timeout-minutes: 1
+        with:
+          url: 'https://github.com/status'
+  test-filesystem-file:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: peterekepeter/test-with-browser@main
+        timeout-minutes: 1
         with:
-          url: 'https://github.com/status'
+          url: 'file://${{ github.workspace }}/test/static-site/index.html'

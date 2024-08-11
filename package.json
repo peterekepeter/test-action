@@ -1,10 +1,7 @@
 {
-  "name": "hello-world-action",
+  "name": "test-with-browser",
   "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "build": "esbuild index.js --bundle --platform=node --outfile=dist/index.js"
-  },
+  "description": "Basic testing using browser.",
   "keywords": [],
   "author": "",
   "license": "MIT",
